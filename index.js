@@ -101,7 +101,7 @@ function deepestChild() {
   var newList = [];
 
   while ( nodeList.isArray === true ) {
-    for (var i=0; i<1; i++) {
+    for (var i=0; i<nodeList.length; i++) {
       newList.push(nodeList[i].children);
       nodeList = newList.shift();
     }
